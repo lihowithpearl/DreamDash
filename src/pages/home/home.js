@@ -10,7 +10,7 @@ const Home = () => {
     return (
     <div class="home">
         <h1>Home</h1>
-        <div>there is supposed to be content here but ok</div>
+        <div>Welcome !!</div>
     </div>
 
     );

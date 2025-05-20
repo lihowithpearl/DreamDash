@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/mydb',{
+mongoose.connect('mongodb://127.0.0.1:27017/DreamDash',{
     useNewURLParser:true,
     useUnifiedTopology: true,
 });

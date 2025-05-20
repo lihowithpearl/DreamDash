@@ -1,6 +1,6 @@
 import "./nav.css";
 import defaultpfp from "./defaultpfp.png";
-import Youtube from "../../pages/youtube/youtube";
+import templatepage from "../../pages/template/templatepage";
 import Home from "../../pages/home/home";
 import {Routes,Route, useNavigate} from 'react-router-dom';
 
@@ -9,8 +9,8 @@ const Nav = () =>{
     const navigateHome = () =>{
         navigate("/");
     }
-    const navigateYoutube = () =>{
-        navigate("/youtube");
+    const navigateTemplate = () =>{
+        navigate("/template");
     }
     return (
         <div id = "navbar">
@@ -22,7 +22,7 @@ const Nav = () =>{
                     <span onClick={navigateHome}>Home</span>
                 </li>
                 <li>
-                    <span onClick={navigateYoutube}>Youtube</span>
+                    <span onClick={navigateTemplate}>TemplatePage</span>
                 </li>
                 <li>
                     <span>button 3</span>

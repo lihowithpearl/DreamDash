@@ -1,9 +1,14 @@
 {
+  "homepage": "https://lihowithpearl.github.io/DreamDash/",
   "name": "firstproject",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^1.7.9",
+     "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
     "cra-template": "1.2.0",
     "express": "^4.21.2",
     "mongodb": "^6.13.1",
@@ -40,7 +45,8 @@
   },
   "devDependencies": {
     "react-router-dom": "^7.1.5",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "gh-pages": "^6.3.0"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",

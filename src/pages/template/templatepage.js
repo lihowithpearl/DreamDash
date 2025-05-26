@@ -82,6 +82,7 @@ const TemplatePage = () => {
 
     return (
         <div>
+            {alert("This has to be gay")}
         HI DOES THIS EXIST
             {/* {addItem && (
                 <div className="fullpage">

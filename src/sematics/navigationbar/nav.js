@@ -1,6 +1,6 @@
 import "./nav.css";
 import defaultpfp from "./defaultpfp.png";
-import templatepage from "../../pages/template/templatepage";
+import TemplatePage from "../../pages/template/templatepage";
 import Home from "../../pages/home/home";
 import {Routes,Route, useNavigate} from 'react-router-dom';
 

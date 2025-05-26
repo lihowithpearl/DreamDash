@@ -1,6 +1,7 @@
 import "./nav.css";
 import defaultpfp from "./defaultpfp.png";
 import TemplatePage from "../../pages/template/templatepage";
+import Dashboard from "../../pages/dashboard/dashboard";
 import Home from "../../pages/home/home";
 import {Routes,Route, useNavigate} from 'react-router-dom';
 
@@ -11,6 +12,9 @@ const Nav = () =>{
     }
     const navigateTemplate = () =>{
         navigate("/template");
+    }
+        const navigateDashboard = () =>{
+        navigate("/dashboard");
     }
     return (
         <div id = "navbar">
@@ -25,7 +29,7 @@ const Nav = () =>{
                     <span onClick={navigateTemplate}>TemplatePage</span>
                 </li>
                 <li>
-                    <span>button 3</span>
+                    <span onClick={navigateDashboard}>Dashboard </span>
                 </li>
             </ul>
             <div class="navitem">

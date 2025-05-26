@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/DreamDash/static/css/main.19ff2364.css",
-    "main.js": "/DreamDash/static/js/main.f9f27db6.js",
+    "main.js": "/DreamDash/static/js/main.5d42c1a9.js",
     "static/js/488.dad45927.chunk.js": "/DreamDash/static/js/488.dad45927.chunk.js",
     "static/media/defaultpfp.png": "/DreamDash/static/media/defaultpfp.fc04cee99299be115f4f.png",
     "index.html": "/DreamDash/index.html",
     "main.19ff2364.css.map": "/DreamDash/static/css/main.19ff2364.css.map",
-    "main.f9f27db6.js.map": "/DreamDash/static/js/main.f9f27db6.js.map",
+    "main.5d42c1a9.js.map": "/DreamDash/static/js/main.5d42c1a9.js.map",
     "488.dad45927.chunk.js.map": "/DreamDash/static/js/488.dad45927.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19ff2364.css",
-    "static/js/main.f9f27db6.js"
+    "static/js/main.5d42c1a9.js"
   ]
 }

@@ -82,8 +82,9 @@ const TemplatePage = () => {
 
     return (
         <div>
-            {alert("This has to be gay")}
+            
         HI DOES THIS EXIST
+        <iframe src="https://www.tfw2005.com/boards/threads/unique-toys-ut-r-10-justice-leader-masterpiece-2007-dotm-optimus-prime.1268587/"></iframe>
             {/* {addItem && (
                 <div className="fullpage">
                     <div className="formpage">

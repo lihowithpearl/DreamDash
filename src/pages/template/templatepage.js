@@ -82,6 +82,7 @@ const TemplatePage = () => {
 
     return (
         <div>
+        HI DOES THIS EXIST
             {addItem && (
                 <div className="fullpage">
                     <div className="formpage">

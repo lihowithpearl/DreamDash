@@ -12,78 +12,78 @@ const TemplatePage = () => {
     const [newItem, setNewItem] = useState({ link: "", name: "" });
     const [editItemData, setEditItemData] = useState({ id: "", link: "", name: "" });
 
-    useEffect(() => {
-        axios.get('http://localhost:27017/items')
-            .then((response) => {
-                setItems(response.data);
-            })
-            .catch((error) => {
-                console.error('There was an error fetching the items', error);
-            });
-    }, []);
+    // useEffect(() => {
+    //     axios.get('http://localhost:27017/items')
+    //         .then((response) => {
+    //             setItems(response.data);
+    //         })
+    //         .catch((error) => {
+    //             console.error('There was an error fetching the items', error);
+    //         });
+    // }, []);
 
-    const handleInputChange = (e) => {
-        setNewItem({ ...newItem, [e.target.name]: e.target.value });
-    };
+    // const handleInputChange = (e) => {
+    //     setNewItem({ ...newItem, [e.target.name]: e.target.value });
+    // };
     
-    const handleEditChange = (e) => {
-        setEditItemData({ ...editItemData, [e.target.name]: e.target.value });
-    };
+    // const handleEditChange = (e) => {
+    //     setEditItemData({ ...editItemData, [e.target.name]: e.target.value });
+    // };
 
-    const handleSubmit = () => {
-        axios.post('http://localhost:27017/item', newItem)
-            .then((response) => {
-                setItems([...items, response.data]);
-                setNewItem({ link: "", name: "" });
-                setAddItem(false);
-            })
-            .catch((error) => console.log("Error adding item", error));
-    };
+    // const handleSubmit = () => {
+    //     axios.post('http://localhost:27017/item', newItem)
+    //         .then((response) => {
+    //             setItems([...items, response.data]);
+    //             setNewItem({ link: "", name: "" });
+    //             setAddItem(false);
+    //         })
+    //         .catch((error) => console.log("Error adding item", error));
+    // };
 
-    const handleEdit = () => {
-        axios.put(`http://localhost:27017/item/${editItemData.id}`, {
-            link: editItemData.link,
-            name: editItemData.name
-        })
-            .then(response => {
-                alert(response.data.message);
-                window.location.reload();
-            })
-            .catch(error => console.log(error.message));
-    };
+    // const handleEdit = () => {
+    //     axios.put(`http://localhost:27017/item/${editItemData.id}`, {
+    //         link: editItemData.link,
+    //         name: editItemData.name
+    //     })
+    //         .then(response => {
+    //             alert(response.data.message);
+    //             window.location.reload();
+    //         })
+    //         .catch(error => console.log(error.message));
+    // };
 
-    const findItem = (query) => {
-        setSearchItem(query);
-        axios.get(`http://localhost:27017/item/${query}`)
-            .then((response) => {
-                if (!response.data) {
-                    setSearchItem("");
-                    setNoItem(false);
-                    setHideSearchBar(true);
-                } else {
-                    setNoItem(false);
-                    setItems(response.data);
-                }
-            })
-            .catch(() => {
-                setNoItem(true);
-                if (query === "") setHideSearchBar(true);
-            });
-    };
+    // const findItem = (query) => {
+    //     setSearchItem(query);
+    //     axios.get(`http://localhost:27017/item/${query}`)
+    //         .then((response) => {
+    //             if (!response.data) {
+    //                 setSearchItem("");
+    //                 setNoItem(false);
+    //                 setHideSearchBar(true);
+    //             } else {
+    //                 setNoItem(false);
+    //                 setItems(response.data);
+    //             }
+    //         })
+    //         .catch(() => {
+    //             setNoItem(true);
+    //             if (query === "") setHideSearchBar(true);
+    //         });
+    // };
 
-    const deleteItem = (id) => {
-        axios.delete(`http://localhost:27017/item/${id}`)
-            .then(() => {
-                alert("Deleted item");
-                window.location.reload();
-            })
-            .catch((error) => console.log(error.message));
-    };
+    // const deleteItem = (id) => {
+    //     axios.delete(`http://localhost:27017/item/${id}`)
+    //         .then(() => {
+    //             alert("Deleted item");
+    //             window.location.reload();
+    //         })
+    //         .catch((error) => console.log(error.message));
+    // };
 
     return (
         <div>
         HI DOES THIS EXIST
-            {addItem && (
+            {/* {addItem && (
                 <div className="fullpage">
                     <div className="formpage">
                         <button className="button" onClick={() => setAddItem(false)}>x</button>
@@ -135,7 +135,7 @@ const TemplatePage = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 };

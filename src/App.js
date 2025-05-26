@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './pages/home/home.js';
-import templatepage from './pages/template/templatepage.js';
+import TemplatePage from './pages/template/templatepage.js';
 import Nav from './sematics/navigationbar/nav.js';
 import {Routes,Route,BrowserRouter as Router, useNavigate} from 'react-router-dom';
 
@@ -13,7 +13,7 @@ function App() {
       <Nav></Nav>
         <Routes>
           <Route path="/" element={<Home/>}/>  
-          <Route path="/template" element={<templatepage/>}/>  
+          <Route path="/template" element={<TemplatePage/>}/>  
         </Routes>
               
     
